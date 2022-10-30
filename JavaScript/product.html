@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="he.css"> -->
+    
+    <title>Document</title>
+</head>
+<body>
+     
+    <div>
+        <div>
+            <img id="image" src="computer.jpeg" width="400px" height="300px"  style="margin-left: 400px; margin-top: 200px;" alt="">
+        </div>
+        <button id="prev" style="margin-left: 400px;" onclick="preimage()">--></button>
+        <button  id="next" onclick="nextimage()"> n </button>
+    </div>
+
+
+     <button id="text10"  onclick="div11()">Remove text show image</button>
+     <button  id="text01" onclick="div2()">Remove image and show text</button>
+
+
+     <div id="text">
+       
+        <h2>Amaar raza </h2>
+       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi sint volu
+           ptatem sequi nihil officiis eum sunt
+       </p>
+    
+
+</div>
+     <div id="text2">
+        <img id="image" src="computer.jpeg" width="400px" height="300px"  style="margin-left: 100px; margin-top: -100px;" alt="">
+    </div>
+   
+</body>
+    </html>
+    <script>
+
+   var div=document.getElementById('text');
+   var div1=document.getElementById('text2');
+  div.style.visibility='visible';
+  div1.style.visibility='hidden';
+       
+ function div2(){
+      div.style.visibility='visible';
+      div1.style.visibility='hidden';
+ 
+    }
+
+function div11(){
+      div.style.visibility='hidden';
+      div1.style.visibility='visible';
+ 
+    }
+    
+
+
+
+
+
+
+var image=document.getElementById('image');
+        var pre=document.getElementById('prev');
+        var next=document.getElementById('next');
+     var image_src=['computer.jpeg','comp.jpeg','comput.jpg','coms.jpg'];
+      var current_image=0;
+     function nextimage(){
+
+        
+        current_image++;
+        
+        if(current_image==4){
+        current_image=0;    }
+        image.src=image_src[current_image];
+     }
+    
+     function preimage(){
+       current_image--;
+       
+       if(current_image<0){
+       
+      current_image=3;
+    }
+    image.src=image_src[current_image];
+}
+
+setInterval(nextimage,3000);
+    </script>
+</body>
+</html>

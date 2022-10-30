@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;   
+    background: linear-gradient(-145deg, rgba(188, 221, 69, 0.781),rgba(80, 211, 80, 0.692));
+    
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;   
+    /* background: linear-gradient(-145deg, rgba(188, 221, 69, 0.781),rgba(80, 211, 80, 0.692)); */
+    margin-top: 30px;
+}
+
+
+.container .times{
+    margin-top: 30px;
+    width: 500px;
+    height: 200px;
+    background: #333;
+margin: 0 auto;
+font-size: 1.5rem;
+padding: 30px 10px;
+    text-align: center;
+    color: silver;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+}
+
+
+.container .list{
+ width: 800px;
+ height: 500px;
+ background: seagreen;
+ text-align: center;
+ margin: 30px auto;
+
+}
+
+.container .list h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: silver;
+}
+.container .list .label{
+font-size: 1.5rem;
+color: #333;
+margin-left: -450px;
+}
+
+.container .list .title{
+margin-left: -20px;
+height: 40px;
+width: 450px;
+outline: none;
+border-radius: 10px;
+}
+
+.container .list .desc{
+    margin-left: -20px;
+    height: 150px;
+    width: 450px;
+    outline: none;
+    border-radius: 10px;
+    }
+
+    .btn-action{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    .container .list .btn{
+        padding: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        background: #333;
+        color: #fff;;
+        border: none;
+        border-radius: 10px;
+         cursor: pointer;
+         transition: all 0.3s ease-out;
+         
+
+    }
+    .container .list .btn:hover{
+        background: white;
+        color: seagreen;
+        
+    }
+    
+    .display-list{
+        background: #333;
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .display-list h1{
+        text-align: center;
+        padding: 20px;
+        color: silver;
+
+    } 

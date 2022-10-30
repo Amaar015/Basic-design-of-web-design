@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h2 id="t1" class="t2" style="font-size: 1.5rem;" >Text Editor</h2>
+ <button onclick="setget()">left</button>
+ <button onclick="setgetcenter()">center</button>
+ <button onclick="setgetright()">right</button>
+ <button onclick="setchange()">change font</button>
+ <button onclick="backsetchange()">Back</button>
+ <button onclick="document.getElementById('t1').style.color='red'">Color</button>
+ <button onclick="document.getElementById('t1').style.fontSize='2.5rem'">Size</button>
+
+ <button onclick="document.getElementById('t1').style.fontSize='1.5rem'">back Size</button>
+
+ <button onclick="document.getElementById('t1').style.fontFamily=' Tahoma, Geneva, Verdana, sans-serif'">BOLD</button>
+
+ <button onclick="setcolor()">Backgroung</button>
+ <button onclick="removecolor()">Remove-Backgroung</button>
+ <button onclick="setItalic()">italic</button>
+ <button onclick="removeItalic()">Remove-italic</button>
+ <button onclick="setUnderlinetext()">Underline</button>
+ <button onclick="setUnderlinetext()">Underline</button>
+ <button onclick="RemoveUnderlinetext()">Remove-Underline</button>
+  <!-- <button onclick="setchange()">c</button> -->
+ <!-- <button onclick="backsetchange()">Back</button> -->
+ 
+ <br><br><br>
+  
+  <button onclick="Remove()" id="btn1">Remove from cart</button><input type="number" value="0" id="input1">
+<button  id="btn2"  onclick="Add()">Add to cart</button>
+
+
+
+<script> 
+function removeItalic(){
+    var t=document.getElementById('t1');
+   t.style.fontStyle='normal';
+}
+function setUnderlinetext(){
+    var t=document.getElementById('t1');
+    t.style.borderBottom='2px solid black';
+}
+function RemoveUnderlinetext(){
+    var t=document.getElementById('t1');
+    t.style.borderBottom='none';
+}
+function setItalic(){
+   var t=document.getElementById('t1');
+   t.style.fontStyle='italic';
+}
+
+function colorpicker(){
+    var t=document.getElementById('t1');
+    var color=document.getElementById('color');
+    console.log(color.value);
+}
+
+function setcolor(){
+ var obj = document.getElementById('t1');
+  obj.style.background='green';
+}
+function removecolor(){
+ var obj = document.getElementById('t1');
+  obj.style.background='';
+}
+
+function setget(){
+    var obj=document.getElementById('t1');
+    //  alert(obj.value); 
+    obj.align='left';
+}
+function setgetright(){
+    var obj=document.getElementById('t1');
+    obj.align='right';
+}
+function setgetcenter(){
+    var obj=document.getElementById('t1');
+    obj.align='center';
+}
+function setchange(){
+var obj1=document.getElementById('t1');
+obj1.innerHTML='Hello this is new text edittor';
+  
+}
+function backsetchange(){
+var obj1=document.getElementById('t1');
+obj1.innerHTML='text edittor';
+  
+}
+function Remove(){
+var obj2=document.getElementById('input1').value;
+var btn=document.getElementById('btn1'); 
+var btn2=document.getElementById('btn2');
+obj2--;
+document.getElementById('input1').value=obj2;
+btn2.disabled=false;
+ if(obj2<=0){
+     btn.disabled=true;
+ }else{
+     btn.disabled=false;
+ }
+}
+function Add(){
+    var obj2=document.getElementById('input1').value;
+var btn=document.getElementById('btn1'); 
+var btn2=document.getElementById('btn2');
+obj2++;
+document.getElementById('input1').value=obj2;
+btn.disabled=false;
+ if(obj2>=20){
+     btn2.disabled=true;
+ }else{
+     btn2.disabled=false;
+ }
+}
+
+  </script>
+</body>
+</html>
