@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: #333;
+
+       }
+       button{
+        background-color: transparent;
+        color: #3bd9b9;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 16px 36px;
+        border: 2px solid #3bd9b9;
+        border-radius: 32px;
+        transform: translate(0);
+        overflow: hidden;
+        cursor: pointer;
+       }
+       button::before{
+          content: "";
+          position: absolute;
+          background: #3bd9b9;
+          width: 8px;
+          top: 0;
+          bottom: 0;
+          left: -32px;
+          transform: rotate(-16deg);
+          filter: blur(6px);
+       }
+       button:hover::before{
+              left: calc(100% + 32px);
+              transition: 1s;
+       }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button>Learn More</button>
+    </div>
+</body>
+</html>
