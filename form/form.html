@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('aU82oQteqjD6pephx');
+        })();
+    </script>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    
+
+    
+    <div class="container">
+        <div class="header">
+            <h2>Create Form</h2>
+        </div>
+        <form class="form" action="https://formsubmit.co/razaammar582@gmail.com" method="POST" >
+            <div class="form-control ">
+                <label for="username" name="username">User Name</label>
+                <input id="textusername" type="text" name="username" placeholder="Name">
+                <small> Error Message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="email" name="email">Email</label>
+                <input id="textemail" type="email" name="email" placeholder="abc@gmail.com">
+                <small> Error Message</small>
+            </div>
+            <div class="form-control">
+              
+                <label for="password" name="password">password</label>
+                <textarea name="password" id="password" cols="30" rows="10"></textarea>
+                <!-- <input id="textpass" type="password" name="password" placeholder="Password"> -->
+                <small> Error Message</small>
+            </div>
+            
+            <div class="form-control">
+                <button onclick="SendMail()">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="form vali.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
