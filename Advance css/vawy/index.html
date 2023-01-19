@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0" />
+
+	<title>
+		How to Create Wave Background using CSS ?
+	</title>
+
+	<style>
+		body {
+			padding: 0%;
+			margin: 0%;
+		}
+
+		.geeks {
+			padding: 200px;
+			text-align: center;
+		}
+
+		section {
+			width: 100%;
+			min-height: 300px;
+		}
+
+		.pattern {
+			position: relative;
+			background-color: #3bb78f;
+            height:auto;
+			background-image: linear-gradient(315deg,
+					#3bb78f 0%, #0bab64 74%);
+		}
+
+		.pattern:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 250px;
+			background: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="pattern">
+		<div class="geeks">
+			<h1>GEEKS FOR GEEKS</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odit eum atque, modi quidem dolorem dolore facilis, dolor perspiciatis labore vel adipisci blanditiis ab, velit aut aliquam eligendi laboriosam a.
+            Voluptates aspernatur quaerat eligendi nostrum delectus, magni necessitatibus, cum, sit recusandae eius animi suscipit ea. Explicabo mollitia deserunt, omnis et quo ex adipisci cumque delectus blanditiis earum animi laboriosam harum?
+            Maxime ullam quam cumque natus expedita asperiores ab repellendus esse quidem numquam, laborum, aspernatur dicta sunt? Tenetur placeat et laboriosam. Ipsam veniam sed incidunt error, temporibus cumque voluptatem facere ipsa!
+            Deleniti veniam animi beatae itaque quisquam adipisci alias cumque deserunt facere, amet suscipit vitae, recusandae excepturi nostrum est incidunt maiores similique autem? Voluptates architecto porro, officiis labore aliquid aut soluta?
+            Facilis aut est reiciendis consectetur vitae perferendis omnis veritatis, vel nemo beatae aspernatur temporibus in deleniti eos alias at doloribus possimus excepturi non saepe dignissimos praesentium eveniet. Pariatur, molestiae beatae!
+            Laboriosam assumenda ad asperiores eos fugit tempora cumque quod, culpa nostrum saepe, aspernatur, optio nobis architecto debitis quibusdam. Quod accusamus blanditiis harum dicta sit ipsum eius odit cum dolor cupiditate?
+            Exercitationem dolore nesciunt facilis, possimus provident soluta dolorum mollitia impedit. Autem odio voluptate repudiandae officia laborum culpa, nam ea sit dignissimos repellat molestiae hic maxime possimus doloremque obcaecati labore. Impedit.
+            Nobis sequi, repellendus placeat amet animi aspernatur dicta ipsam quod beatae aut! Corrupti earum doloremque at non ea libero sed, eum vel totam nisi alias harum explicabo quod vero repellat.
+		</div>
+	</section>
+</body>
+
+</html>
