@@ -15,7 +15,7 @@
     body{
         /* height: 100vh; */
         /* width: 100vw; */
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     .maindiv{
         display: flex;
@@ -23,126 +23,30 @@
         justify-content: center;
         align-items: center;
         background: palegreen;
-         /* padding-top:150px ; */
+         /* padding-top:-50rem ; */
+         /* height: 80vh; */
+
     }
    
 
     /* home sevtion */
-    
-.home{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-padding-left: 9%;
-padding-right: 9%;
-}
-/* home section text styling */
-.home-text{
-flex: 1 1 15rem;
-margin-top:25rem;
-text-align:start!important;
-overflow: hidden;
-}
-.home-text>h1{
-font-size:5rem;
-font-weight:bold;
 
-}
-.home-text>h2{
-margin-top:-0.4rem;
-font-size:3.5rem;
-color:white;
-
-}
-
-.home-text>p{
-font-size:1.4rem;
-width:90%;
-margin-top:2rem;
-color:white;
-}
-.buttons{
-margin-top:2rem;
-display: flex;
-gap: 0.8rem;
-
-}
-.buttons .btn{
-font-size:2rem;
-padding:1rem 1rem;
-background-color: transparent;
-border-radius: 10px;
-color: white;
-border: 2px solid white;
-cursor: pointer;
-transition: all 0.4s linear;
-}
-.buttons .btn:nth-child(1){
-background: var(--white);
-color: var(--blue);
-}
-.buttons .btn:nth-child(1):hover{
-background: transparent;
-color: var(--white);
-}
-
-.buttons .btn:nth-child(2):hover{
-background: var(--white);
-color: var(--blue);
-}
-
-/* curve */
-
-
-
-
-
-.home-image{
-flex:1 1 25rem;
-padding-top: 30rem;
-padding-bottom:0;
-}
-.home-image img{
-width:45%;
-height: 40%;
-border-radius: 50% 20%/ 10% 40%;
-}
-.svg_image{
-       padding-top:-2rem;
-}
 
 </style>
 <body>
+    
     <section class="maindiv">
         <!-- Home section start -->
-<div class="home">
-         
-    <div class="home-text">
-        <h1 class="Stroke-text">B<span>oo</span>kSery</h1>
-             <h2>Save <span>Time</span> & Save <span>Money</span></h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magni atque placeat
-                 minus modi delectus ea, ut beatae perspiciatis!Debitis neque temporibus dignissimos. Numquam repellat placeat tenetur rerum? Nemo animi aperiam vel, cum voluptatem illum tenetur fugit quae? Assumenda quasi non tenetur quisquam cupiditate in harum voluptate doloribus repudiandae.</p>
-                 <div class="buttons">
-                    <button class="btn">Learn More</button>
-                    <button class="btn">Lets to App</button>
-                 </div>
-    </div>
-    <div class="home-image">
-        <img src="doodle2.jpg" alt="">
-    </div>
-                               
-</div>
+<!-- <div class="home">s -->
 
-        <svg  class="svg_image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#fff" fill-opacity="1"
-             d="M0,224L48,202.7C96,181,192,139,288,122.7C384,107,480,117,576,149.3C672,181,768,235,864,234.7C960,235,
-            1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,
-            1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,
-            320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#fff" 
+    fill-opacity="1" d="M0,96L60,85.3C120,75,240,53,360,74.7C480,96,600,
+    160,720,154.7C840,149,960,75,1080,48C1200,21,1320,43,1380,53.3L1440,
+    64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,
+    320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 </section>
 
-<section>
+<section class="about" style="margin-top:2rem;">
     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 </section>
 </body>

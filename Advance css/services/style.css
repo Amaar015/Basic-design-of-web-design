@@ -100,6 +100,14 @@ body{
     z-index: 10000;
     /* --i-stroke-width:24px; */
 }
+.icon img{
+    /* margin-top:-1rem; */
+    width: 8rem;
+    position: absolute;
+    left: 0; top:0;
+    height: 8rem;
+    border-radius: 50%;
+}
 .content{
     position: absolute;
     width: 100%;
