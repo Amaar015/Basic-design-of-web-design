@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+        background: #333;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+        background: url('lion.jpg') center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transform: rotate(20deg) skew(-10deg, -5deg);
+        transition: translate 0.25s,
+            box-shadow 0.25s;
+
+    }
+
+    .card:hover {
+        translate: 0 -30px;
+        box-shadow:
+            5px 3px rgb(217 220 242/75%),
+            10px 5px rgb(44 217 255/50%),
+            15px 9px rgb(126 255 178/25%);
+    }
+</style>
+
+<body>
+    <div class="card">
+    </div>
+</body>
+
+</html>
