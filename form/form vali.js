@@ -89,17 +89,3 @@ function validEmail(email){
     return  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 
 }
-
-
-
-
-function SendMail(){
-    var params={
-        from_name:document.getElementById("textusername").value,
-        email_id:document.getElementById("textemail").value,
-        message:document.getElementById('message').value
-    }
-    emailjs.send("service_w681vos","template_gmmm1fc",params).then(()=>{
-        alert("success"+res.status);
-    })
-}

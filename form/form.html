@@ -7,14 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="form.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('aU82oQteqjD6pephx');
-        })();
-    </script>
-    <script type="text/javascript"></script>
 </head>
 <body>
 
@@ -31,28 +23,31 @@
                 <input id="textusername" type="text" name="username" placeholder="Name">
                 <small> Error Message</small>
             </div>
-           
+            <div class="form-control">
+                <label for="nic" name="nic">C-NIC</label>
+                <input id="textnic" type="number" name="nic" placeholder="1234...m">
+                <small> Error Message</small>
+            </div>
             <div class="form-control">
                 <label for="email" name="email">Email</label>
                 <input id="textemail" type="email" name="email" placeholder="abc@gmail.com">
                 <small> Error Message</small>
             </div>
             <div class="form-control">
-              
                 <label for="password" name="password">password</label>
-                <textarea name="password" id="password" cols="30" rows="10"></textarea>
-                <!-- <input id="textpass" type="password" name="password" placeholder="Password"> -->
+                <input id="textpass" type="password" name="password" placeholder="Password">
                 <small> Error Message</small>
             </div>
-            
             <div class="form-control">
-                <button onclick="SendMail()">Register</button>
+                <label for="cpassword" name="cpassword">Confirm Password</label>
+                <input id="textcpass" type="password" name="cpassword" placeholder="confirm Password">
+                <small> Error Message</small>
+            </div>
+            <div class="form-control">
+                <button>Register</button>
             </div>
         </form>
     </div>
     <script src="form vali.js"></script>
-    <script>
-       
-    </script>
 </body>
 </html>
