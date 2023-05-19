@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .centre {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imagebox {
+        position: relative;
+        width: 400px;
+        height: 250px;
+        background-size: cover;
+        border: 6px solid #555;
+        overflow: hidden;
+    }
+
+    .imagebox img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.5s;
+    }
+
+    .container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transform: translateX(-100%) scale(1) skew(-45deg);
+        transition: 0.5s;
+
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 30px 50px;
+        text-align: center;
+    }
+
+    .content a {
+        padding: 0;
+        /* color: #fff; */
+        margin-bottom: 20px;
+        font-size: 3.3rem;
+        transform: translateY(-100%) scale(0);
+    }
+
+
+
+    .imagebox:hover .content a {
+        transform: translateY(0) scale(1);
+    }
+
+
+    .imagebox:hover img {
+        transform: scale(1.05) translateX(-4px);
+    }
+
+
+    .imagebox:hover .container:before {
+        opacity: 1;
+        background: linear-gradient(rgba(137, 238, 137, 2), rgba(245, 163, 177, 2));
+        transform: translateX(0) scale(1) skew(-45deg);
+    }
+</style>
+
+<body>
+    <div class="centre">
+        <div class="imagebox">
+            <img src="./p-1.2.jpg" alt="">
+            <div class="container">
+                <div class="content">
+                    <a>Amaar Raza</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
