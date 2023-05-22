@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62872ffd3b.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    @import url(https://fonts.google.com/specimen/Luxurious+Roman);
+
+    :root {
+        --main-color: #e38428;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: 0.2s all linear;
+        line-height: 1.5;
+
+    }
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+
+    }
+
+    body {
+        background: #fcf2e8;
+        padding-left: 30rem;
+    }
+
+    section {
+        padding: 1rem 5%;
+        min-height: 100vh;
+    }
+
+    .portfolio {
+        padding: 1rem 5%;
+        min-height: 100vh;
+    }
+
+    .portfolio .box-contain {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+    }
+
+    .portfolio .box-contain .box {
+        flex: 1 1 40rem;
+        height: 25rem;
+        position: relative;
+        overflow: hidden;
+        border: 1rem solid #fff;
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio .box-contain .box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .portfolio .box-contain .box:hover img {
+        height: 80%;
+        width: 80%;
+    }
+
+
+    .portfolio .box-contain .box h3 {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1rem;
+        font-size: 2.5rem;
+        color: #333;
+        text-transform: uppercase;
+
+    }
+
+    .portfolio .box-contain .box .icons {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .portfolio .box-contain .box .icons a {
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 0.5rem;
+        background: #eee;
+        color: #333;
+        font-size: 1.7rem;
+        line-height: 4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+
+    .portfolio .box-contain .box .icons a:hover {
+        background: #e38428;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"> <span>My </span> Services</h1>
+        <div class="box-contain">
+
+            <div class="box">
+                <img src="./p-1.jpg" alt="">
+                <h3>project 01</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./p-1.2.jpg" alt="">
+                <h3>project 02</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./p-2.jpg" alt="">
+                <h3>project 03</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./p-3.jpg" alt="">
+                <h3>project 04</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./p-1.2.jpg" alt="">
+                <h3>project 05</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./p-3.jpg" alt="">
+                <h3>project 06</h3>
+                <div class="icons">
+                    <a href="#"> <i class="fab fa-github-square"></i> </a>
+                    <a href="#"> <i class="fas fa-share"></i> </a>
+                    <a href="#"> <i class="fas fa-search"></i> </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
