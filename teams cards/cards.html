@@ -19,17 +19,21 @@
 
     .main {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #0c5db9;
+        flex-wrap: wrap;
+        gap: 4rem;
+        padding: 2rem 10%;
     }
 
     .profile-card {
         position: relative;
         font-family: sans-serif;
-        width: 250px;
+        /* flex: 1 1 20rem; */
+        width: 250px !important;
         height: 250px;
         background: #fff;
         padding: 30px;
@@ -110,6 +114,36 @@
         <div class="profile-card">
             <div class="img">
                 <img src="./img-3.jpg">
+            </div>
+            <div class="caption">
+                <h3>Vin Diesel</h3>
+                <p>Senior App Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="img">
+                <img src="./img-2.jpg">
+            </div>
+            <div class="caption">
+                <h3>Vin Diesel</h3>
+                <p>Senior App Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="img">
+                <img src="./img-1.jpg">
             </div>
             <div class="caption">
                 <h3>Vin Diesel</h3>
