@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #222;
+    }
+
+    .lol {
+        height: 330px;
+        width: 330px;
+        border: 2px solid #eee;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+    .circle {
+        height: 30px;
+        width: 30px;
+        background: pink;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        -webkit-animation: circle 5s linear infinite;
+        animation: circle 5s linear infinite;
+    }
+
+    @-webkit-keyframes circle {
+        0% {
+            transform: rotate(0deg)translate(-165px)rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg)translate(-165px)rotate(-360deg);
+        }
+    }
+
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg)translate(-165px)rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg)translate(-165px)rotate(-360deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="lol">
+        <div class="circle">
+
+        </div>
+    </div>
+</body>
+
+</html>
